@@ -1,3 +1,5 @@
+from typing import Self
+
 import pygame
 from pygame.sprite import Group
 
@@ -22,5 +24,5 @@ class CircleShape(pygame.sprite.Sprite):
         # sub-classes must override
         pass
 
-    def colliding(self, entity: "CircleShape") -> bool:
+    def colliding(self, entity: Self) -> bool:
         return self.position.distance_to(entity.position) <= self.radius + entity.radius
