@@ -17,11 +17,11 @@ class CircleShape(pygame.sprite.Sprite):
         self.radius = radius
 
     def draw(self, screen):
-        # sub-classes must override
+        Warning("not implemented")
         pass
 
     def update(self, dt):
-        # sub-classes must override
+        Warning("not implemented")
         pass
 
     def colliding(self, entity: Self) -> bool:
